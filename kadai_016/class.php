@@ -19,7 +19,7 @@ class Food {
 
     // メソッド
     public function show_price() {
-        return $this->price;
+        echo $this->price."<br>";
     }
 }
 
@@ -38,14 +38,16 @@ class Animal {
 
     // メソッド
     public function show_height() {
-        return $this->height;
+        echo "<br>".$this->height;
     }
 }
 $food = new Food("野菜", 30);
 print_r($food);
+$food->show_price();
 
 $animal = new Animal("犬", 100, 20);
 print_r($animal);
+$animal->show_height();
 ?>
 </body>
 </html>
